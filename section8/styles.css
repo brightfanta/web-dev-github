@@ -1,0 +1,156 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 44, 44);
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 중간 맞춤 */
+  padding: 0 5%;
+  /* margin-bottom: -100px; */
+  /* position: absolute; */
+  /* width: 100%; */
+  /* box-sizing: border-box; content-box, border-box */
+  /* top: 0;
+  left: 0; */
+  background-color: rgb(24, 24, 24);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(240, 133, 33);
+  text-transform: uppercase;
+}
+
+#main-header a {
+  /* padding: 10px; */
+  /* font-family: "Oleo Script", sans-serif; */
+  color: rgb(240, 133, 33); /* rgb랑 () 사이에 띄어쓰기 있으면 안 됨 */
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
+}
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin-left: 0 20px;
+}
+
+#main-header nav a {
+  color: rgb(206, 115, 31);
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: .75rem;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+  /* border-radius: 6px; */
+  /* font-weight: 100; */
+}
+
+#main-header nav a:hover {
+  /* background-color: rgb(206, 115, 31);
+  padding: 5px 10px; */
+  color: rgb(215, 176, 139);
+  /* border-radius: 7px; */
+  /* margin: 0 10px; */
+}
+
+main {
+  padding-top: 70px;
+}
+
+#latest-products ul {
+  /* margin: 0 auto 30px auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* padding-top: 30px; */
+  /* margin-bottom: 30px; */
+}
+
+main li {
+  /* display: flex; */
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); */
+  border-radius: 8px;
+  overflow: hidden; /* visible: default / hidden:  */
+  text-align: center;
+  /* width: 575px;     */
+}
+
+main h1 {
+  margin: 1.75rem 0;
+  text-align: center;
+  color: rgb(240, 133, 33);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.food-items {
+  background-color: rgb(222, 180, 141);
+  border-radius: 10px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.food-items h2 {
+  margin: 20px 0;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
+}
+
+.food-items img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* .food-items a {
+  color: white;
+  background-color: rgb(240, 133, 33);
+  padding: 7px 14px;
+  border-radius: 7px;
+  font-size: 15px;
+  margin: 15px 0;
+} */
+
+.food-item-content {
+    /* padding: 16px; */
+    /* padding: 10%; */
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(228, 157, 44);
+    color: white;
+    border-radius: 4px;
+    padding: .5rme 1.5rem;
+}
+
+.btn:hover {
+    background-color: rgb(221, 134, 34);
+}
