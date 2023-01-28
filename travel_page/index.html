@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <!-- should be loaded ahead of indivisual stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel Goals</title>
+  </head>
+  <body>
+    <header>
+      <!-- <span> non-semantic inline element </span> -->
+      <div id="page-logo">
+        <!-- non-semantic block element -->
+        <a href="/index.html">Travel Goals</a>
+        <!-- inline element -->
+      </div>
+      <nav>
+        <!-- block element -->
+        <ul>
+          <li><a href="/places.html">Destination</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Hwanhee's Travel Page</h1>
+          <p>Let's explore the World together!</p>
+          <a href="places.html">Discover Places</a>
+        </div>
+      </section>
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul id="destinations">
+          <li class="destination">
+            <img
+              src="images/places/cities/miami.jpg"
+              alt="Miami Streets on sunny day"
+            />
+            <p>Miami <strong>USA</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="images/places/cities/munich.jpg"
+              alt="Munich stadium in winter"
+            />
+            <p>Munich <strong>Germany</strong></p>
+          </li>
+
+          <li class="destination">
+            <img
+              src="images/places/cities/barcelona.jpg"
+              alt="Palm beach in Barcelona"
+            />
+            <p>Bercelona <strong>Spain</strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com">
+            <img src="images/icons/insta.png" alt="Instagram logo" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">
+            <img src="images/icons/facebook.png" alt="Facebook logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

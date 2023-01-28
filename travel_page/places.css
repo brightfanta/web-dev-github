@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 70), rgb(58, 58, 58));
+  color: rgb(65, 65, 65);
+}
+
+#page-logo a {
+    color: rgb(183, 230, 235);
+}
+header {
+  position: static;
+}
+
+header a {
+    color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+    background-color: rgba(183, 230, 235, .8);
+    color: rgb(59, 59, 59);
+}
+
+main ul {
+  width: 1200px;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 30px;
+  /* margin-bottom: 30px; */
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden; /* visible: default / hidden:  */
+  /* width: 575px;     */
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* main li:first-of-type {
+} */
+
+main li:nth-of-type(3) {
+  grid-column: 1 / span 2; /* == 1(how many columns to occupy / span 2 */
+  width: 1200px;
+}
+
+.actions a {
+  /* editted */
+  color: rgb(86, 192, 253);
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.actions a:hover {
+  background-color: rgb(213, 238, 253);
+  /* color: white; */
+  /* border-radius: 2px; */
+}
+
+.item-content h2 {
+    margin: 0;
+}
+.item-content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.actions {
+  text-align: right;
+  /* border-radius: 10px; */
+}
