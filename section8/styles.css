@@ -30,6 +30,22 @@ a {
   text-transform: uppercase;
 }
 
+/* 햄버거 버튼 만들기 */
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.menu-btn span {
+  
+  width: 100%;
+  height: 0.25rem;
+  background-color: white;
+}
+
 #main-header a {
   /* padding: 10px; */
   /* font-family: "Oleo Script", sans-serif; */
@@ -55,7 +71,7 @@ a {
   color: rgb(206, 115, 31);
   text-decoration: none;
   font-size: 1.25rem;
-  padding: .75rem;
+  padding: 0.75rem;
   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
   /* border-radius: 6px; */
   /* font-weight: 100; */
@@ -69,8 +85,54 @@ a {
   /* margin: 0 10px; */
 }
 
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* 전체를 가려버리네 */
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* 중간 맞춤 */
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(253,239,213);
+
+}
+
 main {
   padding-top: 70px;
+}
+
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
 }
 
 #latest-products ul {
@@ -100,11 +162,6 @@ main h1 {
   color: rgb(240, 133, 33);
   font-weight: bold;
   font-size: 3rem;
-}
-
-#latest-products {
-  width: 80%;
-  margin: 2rem auto;
 }
 
 .food-items {
@@ -138,19 +195,41 @@ main h1 {
 } */
 
 .food-item-content {
-    /* padding: 16px; */
-    /* padding: 10%; */
-    padding: 1rem;
-    text-align: center;
+  /* padding: 16px; */
+  /* padding: 10%; */
+  padding: 1rem;
+  text-align: center;
+}
+
+.food-item h2 {
+  margin: 0 0 1rem 0 ;
 }
 
 .btn {
-    background-color: rgb(228, 157, 44);
-    color: white;
-    border-radius: 4px;
-    padding: .5rme 1.5rem;
+  background-color: rgb(228, 157, 44);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
-    background-color: rgb(221, 134, 34);
+  background-color: rgb(221, 134, 34);
 }
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+}
+/* 변경하고자 하는 attribute / property / element 아래(그냥 편하게 제일 마지막)에 써야함 ( cascading nature! */
