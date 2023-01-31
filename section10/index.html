@@ -13,13 +13,122 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form action="/user-data" method="GET">
-      <label for="username">Your name</label>
-      <!-- label 클릭하면 for에 연결된 input에 커서 활성화됨 -->
-      <input type="text" name="user-name" id="username" />
-
-      <!-- void element so, don't need to make closing tags -->
-      <button>Submit</button>
-    </form>
+    <header>
+      <h1>Demo Form</h1>
+    </header>
+    <main>
+      <!-- <form> -->
+      <form action="/" method="GET">
+        <section>
+            <h2>Your Personal Details</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <!-- label 클릭하면 for에 연결된 input에 커서 활성화됨 -->
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your Email Address</label>
+              <input type="email" name="user-email" id="useremail" />
+              <!-- void element so, don't need to make closing tags -->
+            </li>
+            <li>
+              <label for="userpassword">Your Password</label>
+              <input type="password" name="user-password" id="userpassword" />
+            </li>
+          </ul>
+        </section>
+        <section>
+            <h2>More Details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your Age</label>
+              <input type="number" step="5" name="user-age" id="userage" />
+            </li>
+            <li>
+              <label for="birthdate"></label>
+              <input type="date" id="birthdate" name="birth-date" />
+            </li>
+            <li>
+              <label for="favorite-color">Your favorite color?</label>
+              <select name="favorite-color" id="favorite-color">
+                <option value="nlue">BLUE</option>
+                <option value="red">RED</option>
+                <option value="green">GREEN</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <label for="usermessage" name="user-message">Your Message</label>
+        <textarea name="" id="usermessage" cols="30" rows="10"></textarea>
+        <section>
+          <h2>How should we verify your account?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                value="text-message"
+              />
+              <label for="verify-text-message">Via text Message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+              />
+              <label for="verify-phone">Via a phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+              />
+              <label for="verify-email">Via a email</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+            <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">Contact me via email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to Terms?</label>
+          </div>
+        </section>
+        <section>
+            <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+          <!-- form 태그 안에 button 있으면 form 제출 용도로 btn 쓰임! -->
+        </section>
+      </form>
+    </main>
   </body>
 </html>
