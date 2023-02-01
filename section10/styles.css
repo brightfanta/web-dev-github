@@ -27,6 +27,11 @@ label {
   display: block;
 }
 
+textarea {
+    resize: none;
+    /* vertical, horizontal and so on */
+}
+
 input, textarea, select { /* 동시에 적용 */
   width: 100%;
   /* height: 2rem; */

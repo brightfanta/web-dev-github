@@ -1,0 +1,79 @@
+html {
+    background-color: rgb(238, 254, 254);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 30rem;
+  margin: 1rem auto;
+  background-color: rgb(211, 211, 211);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  display: block;
+  width: 90%;
+  margin-bottom: .5rem;
+}
+
+input, textarea, select { /* 동시에 적용 */
+    width: 100%;
+    /* height: 2rem; */
+    /* 줄바꿈 어떻게 함? */
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    /* input, button 은 상속보다 자체 속성이 우선순위가 더 높아서, 별도 inherit 선언해주어야 함 */
+    border: 1px solid rgb(184, 184, 184);
+    padding: .25rem;
+    color:rgb(70, 70, 70);
+  }
+
+.selective {
+  display: flex;
+}
+
+.selective input {
+    width: auto;
+    margin-right: .5rem;
+}
+
+#reply label {
+    margin: 0;
+    padding: 0;
+}
+
+#reply li {
+    height: 2rem;
+    margin-top: -.75rem;
+}
+
+
+#buttons {
+    text-align: right;
+}
+
+.btn {
+    padding: .3rem .8rem;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background-color: rgb(70, 70, 70);
+    color:rgb(239, 239, 239)
+    
+}

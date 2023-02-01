@@ -25,11 +25,12 @@
             <li>
               <label for="username">Your name</label>
               <!-- label 클릭하면 for에 연결된 input에 커서 활성화됨 -->
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required placeholder="Hwanhee"/>
             </li>
             <li>
               <label for="useremail">Your Email Address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <!-- placeholder로 될 것 같지만, 입력 받으면서 placeholder가 없어지므로 어떤 값을 입력해야 하는지 잊을 수 있음, 라벨 필수! -->
+              <input type="email" name="user-email" id="useremail" required placeholder="Your Email"/>
               <!-- void element so, don't need to make closing tags -->
             </li>
             <li>
