@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="your-name">Your Name</label>
+              <input type="text" name="yourname" id="your-name" />
+            </li>
+            <li>
+              <label for="your-email">Your E-Mail Address</label>
+              <input type="email" name="youremail" id="your-email" />
+            </li>
+            <li>
+              <label for="your-phone-num">Your Phone Number</label>
+              <input type="number" name="yournumber" id="your-phone-num" />
+            </li>
+            <li>
+              <label for="your-message">Your Message</label>
+              <textarea
+                name="yourmessage"
+                id="your-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+            <li>
+                <label for="how-to-find-us">How did you find us?</label>
+              <select name="howtofidus" id="how-to-find-us">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section id="reply">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="selective">
+              <input type="radio" name="reply" id="call-me" value="callme" />
+              <label for="call-me">Call me</label>
+            </li>
+            <li class="selective">
+              <input type="radio" name="reply" id="email-me" value="emailme" />
+              <label for="email-me">Call me</label>
+            </li>
+            <li class="selective">
+              <input type="radio" name="reply" id="no-reply" value="noreply" />
+              <label for="no-reply">Call me</label>
+            </li>
+          </ul>
+          <div class="selective">
+            <input type="checkbox" name="acceptterms" id="accept-terms" />
+            <label for="accept-terms">Accept Terms</label>
+          </div>
+        </section>
+        <div id="buttons">
+          <button type="reset" class="btn">Clear</button>
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
