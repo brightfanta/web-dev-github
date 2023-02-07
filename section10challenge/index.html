@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Us Challenge</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,21 +12,28 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-      <form action="/" method="GET">
+      <form action="/section10challenge/" method="GET">
         <section>
           <h2>How can we help you?</h2>
           <ul>
             <li>
               <label for="your-name">Your Name</label>
-              <input type="text" name="yourname" id="your-name" />
+              <input type="text" name="yourname" id="your-name" required /> <!-- editted required -->
             </li>
             <li>
               <label for="your-email">Your E-Mail Address</label>
-              <input type="email" name="youremail" id="your-email" />
+              <input type="email" name="youremail" id="your-email" required /> <!-- editted required -->
             </li>
             <li>
               <label for="your-phone-num">Your Phone Number</label>
-              <input type="number" name="yournumber" id="your-phone-num" />
+              <input
+                type="tel"
+                name="yournumber"
+                id="your-phone-num"
+                required 
+                minlength="5"
+              /> <!-- editted required minlength-->
+              
             </li>
             <li>
               <label for="your-message">Your Message</label>
@@ -35,11 +42,14 @@
                 id="your-message"
                 cols="30"
                 rows="10"
-              ></textarea>
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea> <!-- editted minlength maxlength -->
             </li>
             <li>
-                <label for="how-to-find-us">How did you find us?</label>
-              <select name="howtofidus" id="how-to-find-us">
+              <label for="how-to-find-us">How did you find us?</label>
+              <select name="howtofidus" id="how-to-find-us" required> <!-- editted required -->
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -51,26 +61,27 @@
           <h2>How should we reply?</h2>
           <ul>
             <li class="selective">
-              <input type="radio" name="reply" id="call-me" value="callme" />
+              <input type="radio" name="reply" id="call-me" value="callme" required/> <!-- editted required -->
               <label for="call-me">Call me</label>
             </li>
             <li class="selective">
-              <input type="radio" name="reply" id="email-me" value="emailme" />
-              <label for="email-me">Call me</label>
+              <input type="radio" name="reply" id="email-me" value="emailme" required/> <!-- editted required -->
+              <label for="email-me">Send me an email</label>
             </li>
             <li class="selective">
-              <input type="radio" name="reply" id="no-reply" value="noreply" />
-              <label for="no-reply">Call me</label>
+              <input type="radio" name="reply" id="no-reply" value="noreply" required/> <!-- editted required -->
+              <label for="no-reply">Don't reply</label>
             </li>
           </ul>
           <div class="selective">
-            <input type="checkbox" name="acceptterms" id="accept-terms" />
+            <input type="checkbox" name="acceptterms" id="accept-terms" required/> <!-- editted required -->
             <label for="accept-terms">Accept Terms</label>
+            <!-- named이랑 id랑 같아도 됨 -->
           </div>
         </section>
         <div id="buttons">
-          <button type="reset" class="btn">Clear</button>
-          <button class="btn">Submit</button>
+          <button type="reset" class="btn-empty">Clear</button>
+          <button class="btn-filled">Submit</button>
         </div>
       </form>
     </main>
