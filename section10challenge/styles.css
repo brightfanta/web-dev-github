@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(238, 254, 254);
+  background-color: rgb(238, 254, 254);
 }
 
 h1 {
@@ -9,8 +9,9 @@ h1 {
 form {
   width: 30rem;
   margin: 1rem auto;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(225, 225, 225);
   padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
 }
 
@@ -26,54 +27,88 @@ li {
 label {
   display: block;
   width: 90%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-input, textarea, select { /* 동시에 적용 */
-    width: 100%;
-    /* height: 2rem; */
-    /* 줄바꿈 어떻게 함? */
-    display: block;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    font: inherit;
-    /* input, button 은 상속보다 자체 속성이 우선순위가 더 높아서, 별도 inherit 선언해주어야 함 */
-    border: 1px solid rgb(184, 184, 184);
-    padding: .25rem;
-    color:rgb(70, 70, 70);
-  }
+input,
+textarea,
+select {
+  /* 동시에 적용 */
+  width: 100%;
+  /* height: 2rem; */
+  /* 줄바꿈 어떻게 함? */
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  /* input, button 은 상속보다 자체 속성이 우선순위가 더 높아서, 별도 inherit 선언해주어야 함 */
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(70, 70, 70);
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(190, 216, 248);
+}
+
+.form-control-inline {
+  display: none;
+}
 
 .selective {
   display: flex;
 }
 
 .selective input {
-    width: auto;
-    margin-right: .5rem;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 #reply label {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #reply li {
-    height: 2rem;
-    margin-top: -.75rem;
+  height: 2rem;
+  margin-top: -0.75rem;
 }
-
 
 #buttons {
-    text-align: right;
+  text-align: right;
 }
 
-.btn {
-    padding: .3rem .8rem;
-    box-shadow: none;
+.btn-empty {
+  background-color: rgb(225, 238, 255);
+  padding: 0.3rem 0.8rem;
+  box-shadow: none;
+  font: inherit; /* editted */
+  border: 1px solid rgb(41, 67, 100);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.btn:hover {
-    background-color: rgb(70, 70, 70);
-    color:rgb(239, 239, 239)
-    
+.btn-filled {
+  background-color: rgb(41, 67, 100);
+  padding: 0.3rem 0.8rem;
+  box-shadow: none;
+  font: inherit; /* editted */
+  border: 1px solid rgb(41, 67, 100);
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+.btn-empty:hover {
+    background-color: rgb(160, 201, 255);
+  color: rgb(239, 239, 239);
+}
+
+.btn-filled:hover {
+    background-color: rgb(72, 116, 173);
+    color: rgb(239, 239, 239);
+  }
