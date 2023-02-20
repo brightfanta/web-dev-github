@@ -1,15 +1,32 @@
-// console.log(document);
+// let paragraphElement = document.querySelector('p');
+let paragraphElement = document.body.children[0];
+let inputElement = document.querySelector('input');
 
-// document.body.children[1].children[0].href = 'https://google.com';
+console.dir(document);
+console.log(paragraphElement);
+let a = 0;
+function changeParagraphText(event) {
+  if (event.target.textContent == "Clicked!") {
+    event.target.textContent = "Click me!";
+  } else {
+    event.target.textContent = "Clicked!";
+  }
+//   a++;
+//   console.log(event);
 
-// console.dir(document);
+  //   paragraphElement.textContent = "Clicked!";
+}
 
-document.body.children[1].children[0].href = 'https://google.com';
-// alert();
-// window.alert();
+function retreiveUserInput(event) {
+    // let enteredText = inputElement.value;
+    // console.log(enteredText.length);
+    let enteredText = event.target.value; //외부 변수 상관 없이 함수 내 자체 호출 가능
+    console.log(enteredText);
+    
+}
 
-let anchorElement = document.getElementById('external-link');
-anchorElement.href = 'https://google.com';
 
-anchorElement = document.querySelector('p a'); // a tag nested in p tag
-anchorElement.href = 'https://naver.com';
+// paragraphElement.addEventListener('click', changeParagraphText());
+paragraphElement.addEventListener("click", changeParagraphText);
+inputElement.addEventListener('input', retreiveUserInput);
+
